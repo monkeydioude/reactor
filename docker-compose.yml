@@ -1,0 +1,17 @@
+version: '3'
+services:
+  react:
+    image: node:latest
+    environment:
+      - DIR=app
+    volumes:
+      - ../app/:/app/
+      - ./entrypoint.sh:/entrypoint.sh
+    entrypoint: ./entrypoint.sh
+    ports:
+      - "3000:3000"
+  
+  ruok:
+    build: ./
+    links:
+      - react
