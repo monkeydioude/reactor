@@ -15,6 +15,7 @@ Consequence include:
 - docker status flaging the container as "Unhealthy" for a few seconds
 
 Here's the HEALTHCHECK setting:
+
 `HEALTHCHECK --interval=10s --timeout=30s --start-period=30s --retries=3 CMD curl -f react:3000`
 
 
