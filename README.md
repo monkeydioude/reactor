@@ -2,7 +2,7 @@
 
 [drannoc/reactor](https://hub.docker.com/r/drannoc/reactor/)
 
-__Run it with docker-compose (see example) or run `docker run -d -v app:/app -p 3000:3000 drannoc/reactor:latest`.__
+__Run it with docker-compose (see example) or run `docker run -d -v $PWD/app:/app -p 3000:3000 drannoc/reactor`.__
 
 This React image does 3 things:
 
