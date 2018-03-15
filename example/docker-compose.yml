@@ -5,6 +5,6 @@ services:
     env_file:
       - .env
     volumes:
-      - $REACTOR_APP_DIR
+      - ./app:$REACTOR_APP_DIR
     ports:
       - "3030:3000"
