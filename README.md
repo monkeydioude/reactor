@@ -2,6 +2,8 @@
 
 [drannoc/reactor](https://hub.docker.com/r/drannoc/reactor/)
 
+__Run it with docker-compose (see example) or run `docker run -d -v app:/app -p 3000:3000 drannoc/reactor:latest`.__
+
 This React image does 3 things:
 
 - Fetch all dependencies and start React development server
@@ -16,8 +18,7 @@ Consequence include:
 
 Here's the HEALTHCHECK setting:
 
-`HEALTHCHECK --interval=10s --timeout=30s --start-period=30s --retries=3 CMD curl -f react:3000`
-
+`HEALTHCHECK --interval=10s --timeout=30s --start-period=30s --retries=3 CMD curl -f localhost:3000`
 
 __Now you don't need to install nodejs, npm, react, nor a server to run your project.__
 

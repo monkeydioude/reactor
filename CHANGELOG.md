@@ -1,3 +1,10 @@
+### 1.1 - 15/03/2018
+
+- Set default REACTOR_APP_DIR
+- Added docker-compose + env example
+- Updated [README.md](./README.md)
+- Fixed healthcheck for docker run
+
 ### 1.0 - 11/03/2018
 
 - Fetch all dependencies and start React development server

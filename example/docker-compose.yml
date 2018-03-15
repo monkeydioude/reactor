@@ -1,0 +1,10 @@
+version: '3'
+services:
+  react:
+    image: drannoc/reactor
+    env_file:
+      - .env
+    volumes:
+      - $REACTOR_APP_DIR
+    ports:
+      - "3030:3000"
