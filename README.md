@@ -12,7 +12,7 @@ This React image does 3 things:
 
 Project creation can take a bit of a long time (Around 1min on my sortof mac from the Wu empire).
 Consequence include:
-- having time to pat your dog
+- having time to pat your dog (or go get one then pat your fresh new dog)
 - quick boredom (in this freakin' fast world, i'm giving you time to take a breath. You're welcome)
 - docker status flaging the container as "Unhealthy" for a few seconds
 
