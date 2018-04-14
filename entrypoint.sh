@@ -11,7 +11,9 @@ fi
 
 cd $REACTOR_APP_DIR
 
-npm install
+if [ -z $NO_INSTALL ] || [ $NO_INSTALL == false ] || [ ! -d "node_modules" ]; then
+    npm install
+fi
 
 chown -R 1000:1000 $REACTOR_APP_DIR
 
