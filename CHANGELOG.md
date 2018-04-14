@@ -1,3 +1,8 @@
+### 1.2 - 14/04/2018
+
+- Added __NO_INSTALL__ env parameter to avoid npm install if needed
+- Default usage of image will try to do npm install
+
 ### 1.1 - 15/03/2018
 
 - Set default REACTOR_APP_DIR
