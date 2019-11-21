@@ -5,8 +5,8 @@ if [ -z $REACTOR_APP_DIR ]; then
 fi
 
 if [ ! -f "$REACTOR_APP_DIR/package.json" ]; then
-    npm install -g create-react-app
-    create-react-app $REACTOR_APP_DIR
+    npx create-react-app app --typescript
+    # create-react-app $REACTOR_APP_DIR
 fi
 
 cd $REACTOR_APP_DIR

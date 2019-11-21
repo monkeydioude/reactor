@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM node:8.16.2-alpine3.10
 
 RUN apk update && apk add bash && apk add curl
 
