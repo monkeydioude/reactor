@@ -1,19 +1,19 @@
 #!/bin/bash
 
-if [ -z $REACTOR_APP_DIR ]; then
-    REACTOR_APP_DIR=/app
+if [ -z $APP_NAME ]; then
+    echo "env var APP_NAME not set. Using app"
+    APP_NAME=app
+    REACTOR_APP_DIR=/$APP_NAME
 fi
 
 if [ ! -f "$REACTOR_APP_DIR/package.json" ]; then
-    npx create-react-app app --typescript
-    # create-react-app $REACTOR_APP_DIR
+    echo "Package.json not found. Creating the app."
+    echo " (If it isn't the first time you run this image, u fukd up big time)"
+    npx create-react-app $APP_NAME
+    ls -la
 fi
 
 cd $REACTOR_APP_DIR
-
-if [ -z $NO_INSTALL ] || [ $NO_INSTALL == false ] || [ ! -d "node_modules" ]; then
-    npm install
-fi
 
 chown -R 1000:1000 $REACTOR_APP_DIR
 
